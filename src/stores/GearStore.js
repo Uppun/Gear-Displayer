@@ -1,7 +1,7 @@
 import {ReduceStore} from 'flux/utils';
 import Dispatcher from '../Dispatcher';
 import ActionTypes from '../actions/ActionTypes';
-import fullItemData from '../assets/items.json';
+import iconData from '../assets/items.json';
 
 class GearStore extends ReduceStore {
     constructor() {
@@ -9,7 +9,7 @@ class GearStore extends ReduceStore {
     }
 
     getInitialState() {
-        return null;
+        return {};
     }
 
     reduce(state, action) {
@@ -19,7 +19,7 @@ class GearStore extends ReduceStore {
                 const icons = {};
 
                 for (const item in itemBuild) {
-                    icons[item] = fullItemData.data[parseInt(itemBuild[item].itemID) + 1].Icon;
+                    icons[item] = iconData[parseInt(itemBuild[item].itemID, 10) + 1].icon;
                 }
 
                 return {
