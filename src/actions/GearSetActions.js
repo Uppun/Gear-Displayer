@@ -10,4 +10,17 @@ export default {
             job,
         });
     },
+
+    openModal(modalSlot) {
+        Dispatcher.dispatch({
+            type: ActionTypes.OPENMODAL,
+            modalSlot,
+        });
+    },
+
+    closeModal() {
+        Dispatcher.dispatch({
+            type: ActionTypes.CLOSEMODAL,
+        });
+    },
 }

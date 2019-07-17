@@ -1,3 +1,5 @@
 export default {
     INITIALIZE: 'INITIALIZE',
+    OPENMODAL: 'OPENMODAL',
+    CLOSEMODAL: 'CLOSEMODAL',
 };

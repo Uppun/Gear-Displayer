@@ -9,7 +9,9 @@ class GearStore extends ReduceStore {
     }
 
     getInitialState() {
-        return {};
+        return {
+            modalSlot: null,
+        };
     }
 
     reduce(state, action) {
@@ -23,10 +25,27 @@ class GearStore extends ReduceStore {
                 }
 
                 return {
+                    ...state,
                     itemBuild,
                     materia,
                     job,
                     icons, 
+                }
+            }
+
+            case ActionTypes.OPENMODAL: {
+                const {modalSlot} = action;
+                console.log(modalSlot)
+                return {
+                    ...state,
+                    modalSlot,
+                }
+            }
+
+            case ActionTypes.CLOSEMODAL: {
+                return {
+                    ...state,
+                    modalSlot: null,
                 }
             }
 
