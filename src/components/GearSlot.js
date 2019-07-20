@@ -6,7 +6,6 @@ const GearSlot = ({item, materia, icon, onClick, slot}) => {
     iconNumber = iconNumber.substr(iconNumber.length-6);
     const iconSection = iconNumber.replace(/\d{3}$/, '000');
     const iconUrl = `https://xivapi.com/i/${iconSection}/${iconNumber}.png`
-    console.log(slot)
 
     return (
         <div className='gear-card' onClick={() => onClick(slot)}>
