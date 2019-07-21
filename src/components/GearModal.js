@@ -13,10 +13,7 @@ const GearModal = () => {
     }
 
     const item = itemBuild[modalSlot];
-    console.log(modalSlot)
-    console.log(itemBuild)
-    console.log(item)
-
+    
     return (
         <div className='gear-modal'>
             <ModalWindow item={item} icon={icons[modalSlot]} materia={materia[`${modalSlot}-${item.itemID}`]} />

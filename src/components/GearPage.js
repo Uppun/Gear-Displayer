@@ -11,11 +11,11 @@ const onGearSlotClick = (slot) => {
     GearSetActions.openModal(slot);
 }
 
-const GearPage = () => {
+const GearPage = ({buildId}) => {
     const {itemBuild, job} = useFluxStore(GearStore, (prevState, store) => store.getState());
 
     if (itemBuild == null) {
-        Middleware(); 
+        Middleware(buildId); 
         return(
             <div>
                 Loading...

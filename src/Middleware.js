@@ -4,8 +4,8 @@ import request from 'request';
 const path = 'http://ffxiv.ariyala.com/store.app?';
 const cors_anywhere_url = 'https://cors-anywhere.herokuapp.com/';
 
-export default function initializePage() {
-    request.get({uri: cors_anywhere_url + path, qs: {identifier: '14WX1'}}, (err, res, body) => {
+export default function initializePage(buildId) {
+    request.get({uri: cors_anywhere_url + path, qs: {identifier: buildId}}, (err, res, body) => {
         if (err || res.statusCode !== 200) {
             console.error('error:', err); 
             console.log('statusCode:', res && res.statusCode); 
