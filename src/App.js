@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './assets/App.css';
 import GearPage from './components/GearPage';
 import Landing from './components/Landing';
 import {useRoutes} from 'hookrouter';
@@ -11,9 +11,12 @@ const routes = {
 
 const App = () => {
   const routeResult = useRoutes(routes);
-  console.log(routeResult)
 
-  return routeResult || 'Page not found';
+  return (
+    <div className='gear-app'>
+      {routeResult}
+    </div>
+  )
 }
 
 export default App;

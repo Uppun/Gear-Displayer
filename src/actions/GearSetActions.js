@@ -23,4 +23,10 @@ export default {
             type: ActionTypes.CLOSEMODAL,
         });
     },
+
+    notFound() {
+        Dispatcher.dispatch({
+            type: ActionTypes.NOTFOUND,
+        });
+    },
 }

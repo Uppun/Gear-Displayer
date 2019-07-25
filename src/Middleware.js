@@ -10,7 +10,12 @@ export default function initializePage(buildId) {
             console.error('error:', err); 
             console.log('statusCode:', res && res.statusCode); 
         }
-        
+
+        if (!body) {
+            GearSetActions.notFound();
+            return;
+        }
+
         const parsedData = JSON.parse(body);
 
         const requestedItems = parsedData.datasets[parsedData.content].normal.items;

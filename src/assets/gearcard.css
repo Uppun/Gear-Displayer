@@ -3,4 +3,11 @@
     height: 150px;
     background-color: slategray;
     border: solid 1px black;
+    margin-bottom: 10px;
+}
+
+.gear-card img {
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
 }

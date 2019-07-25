@@ -1,7 +1,7 @@
 .gear-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .gear-page-content {
@@ -12,4 +12,5 @@
     height: 100vh;
     width: 100vw;
     overflow: auto;
+    text-align: center;
 }

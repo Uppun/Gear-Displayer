@@ -35,7 +35,7 @@ class GearStore extends ReduceStore {
 
             case ActionTypes.OPENMODAL: {
                 const {modalSlot} = action;
-                console.log(modalSlot)
+
                 return {
                     ...state,
                     modalSlot,
@@ -46,6 +46,12 @@ class GearStore extends ReduceStore {
                 return {
                     ...state,
                     modalSlot: null,
+                }
+            }
+
+            case ActionTypes.NOTFOUND: {
+                return {
+                    itemBuild: '404 not found',
                 }
             }
 

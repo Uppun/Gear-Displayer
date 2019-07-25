@@ -5,6 +5,7 @@ import ConnectedGearSlot from './ConnectedGearSlot';
 import '../assets/gearpage.css'
 import useFluxStore from 'flux-hooks';
 import GearModal from './GearModal';
+import Landing from './Landing';
 import GearSetActions from '../actions/GearSetActions';
 
 const onGearSlotClick = (slot) => {
@@ -20,6 +21,12 @@ const GearPage = ({buildId}) => {
             <div>
                 Loading...
             </div>
+        )
+    }
+
+    if (itemBuild === '404 not found') {
+        return (
+            <Landing missingPage={true} />
         )
     }
 
