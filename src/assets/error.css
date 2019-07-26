@@ -1,0 +1,11 @@
+.error-message {
+    width: 500px;
+    height: 50px;
+    background-color: lightpink;
+    border: solid 2px red;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    color: red;
+    border-radius: 10px;
+}

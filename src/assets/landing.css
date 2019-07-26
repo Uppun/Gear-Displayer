@@ -1,25 +1,51 @@
 .landing-page {
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    vertical-align: middle;
+    min-height: 100vh;
 }
 
-.error-message {
+.error-box {
     width: 500px;
     height: 50px;
-    background-color: lightpink;
-    border: solid 2px red;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 50px;
-    color: red;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .submit-box {
     width: 500px;
+    background-color: #616065;
+    border: 0;
+    padding: 3px;
+    color: #D1CECD;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.submit-button {
+    border: 0px;
+    color: #D1CECD;
+    padding: 3px;
+    width: 70px;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #68686A 0%, #3B403E 41%, #68686A 100%)
+}
+
+.submit-button:focus, .submit-button:hover {
+    outline: none;
+    background-image: linear-gradient(to top, #949999 0%, #5F5D60 31%, #949999 100%);
+}
+
+.submit-button:focus {
+    box-shadow: 0 0 0 2pt #826122;
+}
+
+.submit-box::placeholder {
+    color: #BCBBBA;
+}
+
+.submit-box:focus {
+    outline-color: #F4F0A6;
+    box-shadow: 0 0 10px #B1983B;
 }
 

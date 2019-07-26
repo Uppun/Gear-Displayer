@@ -18,7 +18,7 @@ const GearPage = ({buildId}) => {
     if (itemBuild == null) {
         Middleware(buildId); 
         return(
-            <div>
+            <div className='loading-page'>
                 Loading...
             </div>
         )
