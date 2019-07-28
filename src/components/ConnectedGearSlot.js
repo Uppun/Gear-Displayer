@@ -1,6 +1,7 @@
 import React from 'react';
 import GearStore from '../stores/GearStore';
 import GearSlot from './GearSlot';
+import EmptySlot from './EmptySlot';
 import useFluxStore from 'flux-hooks';
 
 const ConnectedGearSlot = ({slot, onClick}) => {
@@ -8,7 +9,10 @@ const ConnectedGearSlot = ({slot, onClick}) => {
     const item = itemBuild[slot];
 
     if (!item) {
-        return null;
+        if (slot !== 'ringRight' && slot !== 'ringLeft') {
+            return <EmptySlot slot={slot}/>;
+        }
+        return <EmptySlot slot={'ring'}/>;
     }
     
     return (

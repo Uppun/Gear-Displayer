@@ -13,7 +13,7 @@ const onGearSlotClick = (slot) => {
 }
 
 const GearPage = ({buildId}) => {
-    const {itemBuild, job} = useFluxStore(GearStore, (prevState, store) => store.getState());
+    const {itemBuild} = useFluxStore(GearStore, (prevState, store) => store.getState());
 
     if (itemBuild == null) {
         Middleware(buildId); 
@@ -34,9 +34,6 @@ const GearPage = ({buildId}) => {
         <div className='gear-page'>
             <GearModal />
             <div className='gear-page-content'>
-                <div>
-                    {job}
-                </div>
                 <div className='gear-container'>
                     <div className='left-side'>
                         <ConnectedGearSlot slot='mainhand' onClick={onGearSlotClick} />

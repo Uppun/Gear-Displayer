@@ -13,10 +13,10 @@ const GearModal = () => {
     }
 
     const item = itemBuild[modalSlot];
-    
+
     return (
         <div className='gear-modal'>
-            <ModalWindow item={item} icon={icons[modalSlot]} materia={materia[`${modalSlot}-${item.itemID}`]} />
+            <ModalWindow item={item} icon={icons[modalSlot]} materia={materia[`${modalSlot}-${item.itemID}`]} slot={modalSlot} />
             <div className='modal-background' onClick={() => GearSetActions.closeModal()}/>
         </div>
     )

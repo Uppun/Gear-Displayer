@@ -1,13 +1,41 @@
 .gear-card {
     width: 300px;
     height: 150px;
-    background-color: slategray;
-    border: solid 1px black;
-    margin-bottom: 10px;
+    background-color: #51514F;
+    margin: 5px 0 5px 0;
+    color: #DEDEDE;
+    font-size: 15px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.gear-card:hover {
+    box-shadow: 4px 4px 4px rgb(0, 0, 0);
+    transform: translate(4px, -4px);
+    cursor: pointer;
 }
 
 .gear-card img {
     display: block;
     margin-left: 10px;
     margin-top: 10px;
+}
+
+.materia {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.icon-and-name {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-name {
+    margin: 10px;
+}
+
+.gear-icon {
+    margin: 10px;
 }
