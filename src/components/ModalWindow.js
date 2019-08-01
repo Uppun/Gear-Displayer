@@ -2,6 +2,7 @@ import React from 'react';
 import '../assets/modal.css';
 import materiaMap from '../assets/materiaMap';
 import nameMap from '../assets/nameMap';
+import materiaIconsMap from '../assets/materiaIconsMap';
 
 const ModalWindow = ({item, materia, icon, slot}) => {
 
@@ -10,9 +11,7 @@ const ModalWindow = ({item, materia, icon, slot}) => {
     const iconSection = iconNumber.replace(/\d{3}$/, '000');
     const iconUrl = `https://xivapi.com/i/${iconSection}/${iconNumber}.png`;
 
-    console.log(item)
     const stats = item.category === 'crafted' && item.HQ ? item.statsHQ : item.statsNQ;
-    console.log(stats)
 
     return (
         <div className='modal-window'>
@@ -47,9 +46,17 @@ const ModalWindow = ({item, materia, icon, slot}) => {
                 <div className='materia'>
                     {materia ? materia.map((materia, index) => {
                         const splitMateria = materia.split(':');
+                        const materiaNumber = parseInt(splitMateria[1], 10);
+                        const materiaIcon = materiaIconsMap.get(splitMateria[0])[materiaNumber];
+                        const materiaIconLink = `https://xivapi.com/i/020000/${materiaIcon}.png`
                         return (
                             <div className='materia-entry' key={index}>
-                                {materiaMap.get(splitMateria[0]) + ' ' + (parseInt(splitMateria[1], 10) + 1)}
+                                <img 
+                                    src={materiaIconLink}
+                                    alt='icon'
+                                    className='materia-icon'
+                                />
+                                {materiaMap.get(splitMateria[0]) + ' ' + (materiaNumber + 1)}
                             </div>
                         )}) : null}
                 </div>

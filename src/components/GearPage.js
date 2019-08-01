@@ -35,22 +35,32 @@ const GearPage = ({buildId}) => {
             <GearModal />
             <div className='gear-page-content'>
                 <div className='gear-container'>
-                    <div className='left-side'>
+                    <div className='gear-row'>
                         <ConnectedGearSlot slot='mainhand' onClick={onGearSlotClick} />
-                        <ConnectedGearSlot slot='head' onClick={onGearSlotClick} />
-                        <ConnectedGearSlot slot='hands' onClick={onGearSlotClick} />
-                        <ConnectedGearSlot slot='chest' onClick={onGearSlotClick} />
-                        <ConnectedGearSlot slot='waist' onClick={onGearSlotClick} />
-                        <ConnectedGearSlot slot='legs' onClick={onGearSlotClick} />
-                        <ConnectedGearSlot slot='feet' onClick={onGearSlotClick} />
-                    </div>
-                    <div className='right-side'>
                         <ConnectedGearSlot slot='offhand' onClick={onGearSlotClick} />
+                    </div>
+                    <div className='gear-row'>
+                        <ConnectedGearSlot slot='head' onClick={onGearSlotClick} />
                         <ConnectedGearSlot slot='ears' onClick={onGearSlotClick} />
+                    </div>
+                    <div className='gear-row'>
+                        <ConnectedGearSlot slot='hands' onClick={onGearSlotClick} />
                         <ConnectedGearSlot slot='neck' onClick={onGearSlotClick} />
+                    </div>
+                    <div className='gear-row'>
+                        <ConnectedGearSlot slot='chest' onClick={onGearSlotClick} />
                         <ConnectedGearSlot slot='wrist' onClick={onGearSlotClick} />
+                    </div>
+                    <div className='gear-row'>
+                        <ConnectedGearSlot slot='waist' onClick={onGearSlotClick} />
                         <ConnectedGearSlot slot='ringRight' onClick={onGearSlotClick} />
+                    </div>
+                    <div className='gear-row'>
+                        <ConnectedGearSlot slot='legs' onClick={onGearSlotClick} />
                         <ConnectedGearSlot slot='ringLeft' onClick={onGearSlotClick} />
+                    </div>
+                    <div className='gear-row'>
+                        <ConnectedGearSlot slot='feet' onClick={onGearSlotClick} />
                         <ConnectedGearSlot slot='food' onClick={onGearSlotClick} />
                     </div>
                 </div>

@@ -1,17 +1,22 @@
-.gear-card {
+.gear-card, .empty-gear-card {
     width: 300px;
-    height: 150px;
+    height: 55px;
     background-color: #51514F;
-    margin: 5px 0 5px 0;
-    color: #DEDEDE;
+    margin: 15px 0 15px 0;
     font-size: 15px;
     border-radius: 4px;
     overflow: hidden;
+    color: #DEDEDE;
+    display: block;
+}
+
+.gear-card {
+    text-align: left;
 }
 
 .gear-card:hover {
     box-shadow: 4px 4px 4px rgb(0, 0, 0);
-    transform: translate(4px, -4px);
+    transform: translate(-4px, -4px);
     cursor: pointer;
 }
 
@@ -25,17 +30,30 @@
     display: flex;
     flex-direction: column;
     font-size: 13px;
+    width: 300px;
+    color: #DEDEDE;
+    justify-content: center;
+    text-align: right;
+    padding-right: 5px;
 }
 
 .icon-and-name {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
-.item-name {
-    margin: 10px;
+.connected-gear-slot {
+    display: flex;
+    flex-direction: row;
 }
 
-.gear-icon {
-    margin: 10px;
+.materia-icon {
+    height: 13px;
+    width: 13px;
+}
+
+.empty-icon {
+    height: 50px;
+    width: 50px;
 }

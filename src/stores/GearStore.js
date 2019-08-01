@@ -20,8 +20,9 @@ class GearStore extends ReduceStore {
                 const {itemBuild, materia, job} = action;
                 const icons = {};
 
+                
                 for (const item in itemBuild) {
-                    icons[item] = iconData[parseInt(itemBuild[item].itemID, 10) + 1].icon;
+                    icons[item] = iconData[parseInt(itemBuild[item].itemID, 10)];
                 }
 
                 return {
