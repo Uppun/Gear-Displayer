@@ -1,19 +1,19 @@
-import React, { useCallback, useRef } from 'react';
+import React, { useRef } from 'react';
 import '../assets/landing.css';
 import ErrorMessage from './ErrorMessage';
+import {navigate} from 'hookrouter';
 
 const Landing = ({missingPage}) => {
     let renderError = missingPage;
     const submissionRef = useRef(null);
-    const handleSubmit = useCallback(
-        (e) => {
+
+    function handleSubmit(e) {
             e.preventDefault();
             
             if (submissionRef.current.value) {
-                window.location.href = `http://localhost:3000/build/${submissionRef.current.value}`;
+                navigate(`http://localhost:3000/build/${submissionRef.current.value}`);
             }
-
-        },[],);
+        };
 
     return (
         <div className='landing-page'>

@@ -1,0 +1,29 @@
+.top-bar {
+    height: 50px;
+    width: 100%;
+    background-color: #2a2a2c;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-button {
+    border: 0px;
+    color: #D1CECD;
+    padding: 3px;
+    width: 70px;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #68686A 0%, #3B403E 41%, #68686A 100%)
+}
+
+.nav-button:focus, .nav-button:hover {
+    outline: none;
+    background-image: linear-gradient(to top, #949999 0%, #5F5D60 31%, #949999 100%);
+}
+
+.nav-button:focus {
+    box-shadow: 0 0 0 2pt #826122;
+}

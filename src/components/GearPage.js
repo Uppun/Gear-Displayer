@@ -7,6 +7,7 @@ import useFluxStore from 'flux-hooks';
 import GearModal from './GearModal';
 import Landing from './Landing';
 import GearSetActions from '../actions/GearSetActions';
+import NavBar from './NavBar';
 
 const onGearSlotClick = (slot) => {
     GearSetActions.openModal(slot);
@@ -33,6 +34,7 @@ const GearPage = ({buildId}) => {
     return(
         <div className='gear-page'>
             <GearModal />
+            <NavBar id={buildId} />
             <div className='gear-page-content'>
                 <div className='gear-container'>
                     <div className='gear-row'>
