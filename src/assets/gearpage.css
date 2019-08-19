@@ -7,10 +7,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    min-width: 400px;
 }
 
 .gear-page-content {
-    z-index: 1;
+    z-index: 0;
     width: 100vw;
     align-items: center;
     justify-content: center;
