@@ -21,7 +21,7 @@ const GearSlot = ({item, icon, onClick, slot}) => {
                 <img 
                     src={iconUrl}
                     alt='icon'
-                    className='gear-icon'
+                    className='gear-card-icon'
                 />
                 <div className='item-name'>
                     {item.name.en}

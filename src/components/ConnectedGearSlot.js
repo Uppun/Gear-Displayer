@@ -42,7 +42,9 @@ const ConnectedGearSlot = ({slot, onClick}) => {
                     )
                 }) : null}
             </div>
-            {gearSlot}
+            <div className='gear-slot-container'>
+                {gearSlot}
+            </div>
         </div>
     )
 }

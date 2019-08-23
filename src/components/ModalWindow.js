@@ -16,13 +16,13 @@ const ModalWindow = ({item, materia, icon, slot}) => {
     return (
         <div className='modal-window'>
             <div className='modal-top'>
-                <div className='icon-and-name'>
+                <div className='modal-icon-and-name'>
                     <img
-                        className='gear-icon'
+                        className='modal-gear-icon'
                         src={iconUrl}
                         alt='icon' 
                     />
-                    <div className='item-name'>
+                    <div className='modal-item-name'>
                         {item.name.en}
                     </div>
                 </div>
@@ -43,7 +43,7 @@ const ModalWindow = ({item, materia, icon, slot}) => {
                             </div>
                     )})}
                 </div>
-                <div className='materia'>
+                <div className='modal-materia'>
                     {materia ? materia.map((materia, index) => {
                         const splitMateria = materia.split(':');
                         const materiaNumber = parseInt(splitMateria[1], 10);

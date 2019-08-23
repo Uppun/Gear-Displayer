@@ -36,16 +36,16 @@
     font-size: 15px;
 }
 
-.icon-and-name {
+.modal-icon-and-name {
     display: flex;
     flex-direction: row;
 }
 
-.item-name {
+.modal-item-name {
     margin: 10px;
 }
 
-.gear-icon {
+.modal-gear-icon {
     margin: 10px;
 }
 
@@ -60,6 +60,6 @@
     font-size: 15px;
 }
 
-.materia {
+.modal-materia {
     margin-bottom: 20px;
 }
