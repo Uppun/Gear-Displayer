@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Gear-Displayer/static/css/main.f0977865.chunk.css",
+    "main.js": "/Gear-Displayer/static/js/main.804de705.chunk.js",
+    "main.js.map": "/Gear-Displayer/static/js/main.804de705.chunk.js.map",
+    "runtime-main.js": "/Gear-Displayer/static/js/runtime-main.c28d0f56.js",
+    "runtime-main.js.map": "/Gear-Displayer/static/js/runtime-main.c28d0f56.js.map",
+    "static/js/2.48fd198e.chunk.js": "/Gear-Displayer/static/js/2.48fd198e.chunk.js",
+    "static/js/2.48fd198e.chunk.js.map": "/Gear-Displayer/static/js/2.48fd198e.chunk.js.map",
+    "index.html": "/Gear-Displayer/index.html",
+    "precache-manifest.dd1cbf6f557366f79e6a7ae27707ea3c.js": "/Gear-Displayer/precache-manifest.dd1cbf6f557366f79e6a7ae27707ea3c.js",
+    "service-worker.js": "/Gear-Displayer/service-worker.js",
+    "static/css/main.f0977865.chunk.css.map": "/Gear-Displayer/static/css/main.f0977865.chunk.css.map"
+  }
+}
