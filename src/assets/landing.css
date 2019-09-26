@@ -49,3 +49,20 @@
     box-shadow: 0 0 10px #B1983B;
 }
 
+.help-text {
+    color: #BCBBBA;
+}
+
+.link-text {
+    color: #BAB8FF;
+}
+
+.link-text:hover {
+    cursor: pointer;
+}
+
+.page-title {
+    color: #BCBBBA;
+    text-align: center;
+    font-size: 40px;
+}

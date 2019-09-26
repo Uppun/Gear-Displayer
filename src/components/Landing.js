@@ -15,15 +15,30 @@ const Landing = ({missingPage}) => {
             }
         };
 
+        const onPress = () => {
+            window.location.href = 'https://ffxiv.ariyala.com/'; 
+        }
+
     return (
         <div className='landing-page'>
             <div className='error-box'>
-                {renderError ? <ErrorMessage message='Build not found. Please try another ID.' /> : null}
+                {renderError ? <ErrorMessage message='Build not found. Please try another ID.' /> : <TitleMessage />}
             </div>
             <form onSubmit={handleSubmit}>
                 <input ref={submissionRef} type='text' className='submit-box' placeholder='Enter build ID' />
                 <input type='submit' className='submit-button' value='Search' />
             </form>
+            <div className='help-text'>
+                <text>To search for a build, enter the gearset code from <text onClick={onPress} className='link-text'>Ariyala</text>. Example: 17L25</text>
+            </div>
+        </div>
+    )
+}
+
+const TitleMessage = () => {
+    return (
+        <div className='page-title'>
+            FFXIV Gearset Viewer
         </div>
     )
 }
