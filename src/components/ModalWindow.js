@@ -11,7 +11,7 @@ const ModalWindow = ({item, materia, icon, slot}) => {
     const iconSection = iconNumber.replace(/\d{3}$/, '000');
     const iconUrl = `https://xivapi.com/i/${iconSection}/${iconNumber}.png`;
 
-    const stats = item.category === 'crafted' && item.HQ ? item.statsHQ : item.statsNQ;
+    const {stats, mainStatLine} = item;
 
     return (
         <div className='modal-window'>
@@ -28,11 +28,18 @@ const ModalWindow = ({item, materia, icon, slot}) => {
                 </div>
             </div>
             <div className='modal-bottom'>
+                <div className='main-stat-line'>
+                    {mainStatLine.map((stat, index) => {
+                            const key = Object.keys(stat)[0];
+                            let value = stat[Object.keys(stat)[0]];
+                            if (key === 'DLY') {
+                                    value = value/1000
+                            }
+                            return (key !== 'PDMG' && key !== 'MDMG') ? <div className='main-stat'>{`${nameMap.get(key)}: ${value}`}</div> : null;    
+                    })}
+                </div>
                 <div className='stats'>
                     {Object.entries(stats).map(([key, value], index) => {
-                        if (key === 'DLY') {
-                            value = value/1000
-                        }
                         return (slot !== 'food' ?
                             <div className='stat-entry' key={index}>
                                 {`${nameMap.get(key)}: ${value}`}

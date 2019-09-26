@@ -3,6 +3,17 @@ import Dispatcher from '../Dispatcher';
 import ActionTypes from '../actions/ActionTypes';
 import iconData from '../assets/items.json';
 
+const statOrdering = [
+    'PDMG',
+    'MDMG',
+    'WPN',
+    'DLY',
+    'DEF',
+    'MDEF',
+    'BLKR',
+    'BLKS',
+];
+
 class GearStore extends ReduceStore {
     constructor() {
         super(Dispatcher);
@@ -23,6 +34,20 @@ class GearStore extends ReduceStore {
                 
                 for (const item in itemBuild) {
                     icons[item] = iconData[parseInt(itemBuild[item].itemID, 10)];
+                    const stats = itemBuild[item].category === 'crafted' && itemBuild[item].HQ ? itemBuild[item].statsHQ : itemBuild[item].statsNQ;
+
+                    itemBuild[item].mainStatLine = [];
+                
+                    for (const stat of statOrdering) {
+                        if (stats[stat]) {
+                            const obj = {};
+                            obj[stat] = stats[stat];
+                            itemBuild[item].mainStatLine.push(obj);
+                            delete stats[stat];
+                        }
+                    }
+
+                    itemBuild[item].stats = stats; 
                 }
 
                 return {

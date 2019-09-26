@@ -43,6 +43,7 @@
 
 .modal-item-name {
     margin: 10px;
+    padding-top: 10px;
 }
 
 .modal-gear-icon {
@@ -54,12 +55,19 @@
 }
 
 .stats {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 40px;
+    margin-top: 20px;
     font-size: 15px;
 }
 
 .modal-materia {
     margin-bottom: 20px;
+}
+
+.main-stat-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
