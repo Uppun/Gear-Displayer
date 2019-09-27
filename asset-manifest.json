@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Gear-Displayer/static/css/main.f0977865.chunk.css",
-    "main.js": "/Gear-Displayer/static/js/main.804de705.chunk.js",
-    "main.js.map": "/Gear-Displayer/static/js/main.804de705.chunk.js.map",
+    "main.css": "/Gear-Displayer/static/css/main.da9a2e93.chunk.css",
+    "main.js": "/Gear-Displayer/static/js/main.2a6c6398.chunk.js",
+    "main.js.map": "/Gear-Displayer/static/js/main.2a6c6398.chunk.js.map",
     "runtime-main.js": "/Gear-Displayer/static/js/runtime-main.c28d0f56.js",
     "runtime-main.js.map": "/Gear-Displayer/static/js/runtime-main.c28d0f56.js.map",
-    "static/js/2.48fd198e.chunk.js": "/Gear-Displayer/static/js/2.48fd198e.chunk.js",
-    "static/js/2.48fd198e.chunk.js.map": "/Gear-Displayer/static/js/2.48fd198e.chunk.js.map",
+    "static/js/2.f8199a4b.chunk.js": "/Gear-Displayer/static/js/2.f8199a4b.chunk.js",
+    "static/js/2.f8199a4b.chunk.js.map": "/Gear-Displayer/static/js/2.f8199a4b.chunk.js.map",
     "index.html": "/Gear-Displayer/index.html",
-    "precache-manifest.dd1cbf6f557366f79e6a7ae27707ea3c.js": "/Gear-Displayer/precache-manifest.dd1cbf6f557366f79e6a7ae27707ea3c.js",
+    "precache-manifest.28a7b402eba90f827bc493c25275c592.js": "/Gear-Displayer/precache-manifest.28a7b402eba90f827bc493c25275c592.js",
     "service-worker.js": "/Gear-Displayer/service-worker.js",
-    "static/css/main.f0977865.chunk.css.map": "/Gear-Displayer/static/css/main.f0977865.chunk.css.map"
+    "static/css/main.da9a2e93.chunk.css.map": "/Gear-Displayer/static/css/main.da9a2e93.chunk.css.map"
   }
 }
