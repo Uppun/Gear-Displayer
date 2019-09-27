@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Gear-Displayer/static/css/main.0326836e.chunk.css",
+    "main.css": "/Gear-Displayer/static/css/main.fe9dad3a.chunk.css",
     "main.js": "/Gear-Displayer/static/js/main.a3a2cf71.chunk.js",
     "main.js.map": "/Gear-Displayer/static/js/main.a3a2cf71.chunk.js.map",
     "runtime-main.js": "/Gear-Displayer/static/js/runtime-main.c28d0f56.js",
@@ -8,8 +8,8 @@
     "static/js/2.f8199a4b.chunk.js": "/Gear-Displayer/static/js/2.f8199a4b.chunk.js",
     "static/js/2.f8199a4b.chunk.js.map": "/Gear-Displayer/static/js/2.f8199a4b.chunk.js.map",
     "index.html": "/Gear-Displayer/index.html",
-    "precache-manifest.c41c39e659e016320fd01f3ad2c52cb5.js": "/Gear-Displayer/precache-manifest.c41c39e659e016320fd01f3ad2c52cb5.js",
+    "precache-manifest.5cab1be0b95e511f655f9d0ed88d3e3e.js": "/Gear-Displayer/precache-manifest.5cab1be0b95e511f655f9d0ed88d3e3e.js",
     "service-worker.js": "/Gear-Displayer/service-worker.js",
-    "static/css/main.0326836e.chunk.css.map": "/Gear-Displayer/static/css/main.0326836e.chunk.css.map"
+    "static/css/main.fe9dad3a.chunk.css.map": "/Gear-Displayer/static/css/main.fe9dad3a.chunk.css.map"
   }
 }
