@@ -39,6 +39,7 @@
 .modal-icon-and-name {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .modal-item-name {
