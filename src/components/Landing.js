@@ -29,7 +29,7 @@ const Landing = ({missingPage}) => {
                 <input type='submit' className='submit-button' value='Search' />
             </form>
             <div className='help-text'>
-                <text>To search for a build, enter the gearset code from <text onClick={onPress} className='link-text'>Ariyala</text>. Example: 17L25</text>
+                <text>To search for a build, enter the build ID from <text onClick={onPress} className='link-text'>Ariyala</text>. Example: 17L25</text>
             </div>
         </div>
     )

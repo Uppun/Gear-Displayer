@@ -22,6 +22,7 @@
 .nav-button:focus, .nav-button:hover {
     outline: none;
     background-image: linear-gradient(to top, #949999 0%, #5F5D60 31%, #949999 100%);
+    cursor: pointer;
 }
 
 .nav-button:focus {
