@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "82a82c1b6bd6ad5b47fbca439d5ab21f",
+    "revision": "e96f3f8cca44c667b42a943bc6178d9a",
     "url": "/Gear-Displayer/index.html"
   },
   {
-    "revision": "ce47e77e7c7a0f4a7c66",
-    "url": "/Gear-Displayer/static/css/main.da9a2e93.chunk.css"
+    "revision": "931bbdef183e99fcb936",
+    "url": "/Gear-Displayer/static/css/main.0326836e.chunk.css"
   },
   {
     "revision": "ff7d57f0045e2849bbe3",
     "url": "/Gear-Displayer/static/js/2.f8199a4b.chunk.js"
   },
   {
-    "revision": "ce47e77e7c7a0f4a7c66",
-    "url": "/Gear-Displayer/static/js/main.2a6c6398.chunk.js"
+    "revision": "931bbdef183e99fcb936",
+    "url": "/Gear-Displayer/static/js/main.a3a2cf71.chunk.js"
   },
   {
     "revision": "ebf12bc72dbaae6857fb",
