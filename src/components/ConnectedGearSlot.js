@@ -18,6 +18,7 @@ const ConnectedGearSlot = ({slot, onClick}) => {
         gearSlot = (slot !== 'ringRight' && slot !== 'ringLeft') ? <EmptySlot slot={slot}/> : gearSlot = <EmptySlot slot={'ring'}/>;
         slottedMateria = [];    
     } else {
+        console.log(icons[slot])
         gearSlot = <GearSlot item={item} icon={icons[slot]} onClick={onClick} slot={slot} />;
         slottedMateria = materia[`${slot}-${item.itemID}`]; ;
     }
