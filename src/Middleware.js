@@ -36,9 +36,13 @@ export default function initializePage(buildId) {
             const itemData = JSON.parse(body);
             const itemBuild = {};
             const job = parsedData.content;
-
+            let result = 0;
             for (const [slot, id] of Object.entries(parsedData.datasets[job].normal.items)) {
                 for (const item of itemData) {
+                    if (result === 0) {
+                        console.log(item);
+                        console.log(slot);
+                    }
                     if (id === item.itemID) {
                         itemBuild[slot] = item;
                     }
