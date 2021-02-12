@@ -2,7 +2,7 @@ import GearSetActions from './actions/GearSetActions';
 import request from 'request';
 
 const path = 'http://ffxiv.ariyala.com/store.app?';
-const cors_anywhere_url = 'https://cors-anywhere.herokuapp.com/';
+const cors_anywhere_url = 'https://ffxiv-cors-proxy.herokuapp.com/';
 
 export default function initializePage(buildId) {
     request.get({uri: cors_anywhere_url + path, qs: {identifier: buildId}}, (err, res, body) => {
@@ -42,6 +42,7 @@ export default function initializePage(buildId) {
                     if (result === 0) {
                         console.log(item);
                         console.log(slot);
+                        result++;
                     }
                     if (id === item.itemID) {
                         itemBuild[slot] = item;
