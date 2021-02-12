@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3a42ecb6b6c8439f702ae04a8223a7d7",
+    "revision": "a10249fd9c0cb0863681bdb3ece5559d",
     "url": "/Gear-Displayer/index.html"
   },
   {
-    "revision": "fe53e91a6bf35da7cb41",
+    "revision": "36467706d90d26cd0bc9",
     "url": "/Gear-Displayer/static/css/main.2a17c8e9.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Gear-Displayer/static/js/2.f8199a4b.chunk.js"
   },
   {
-    "revision": "fe53e91a6bf35da7cb41",
-    "url": "/Gear-Displayer/static/js/main.492e273c.chunk.js"
+    "revision": "36467706d90d26cd0bc9",
+    "url": "/Gear-Displayer/static/js/main.00620cec.chunk.js"
   },
   {
     "revision": "ebf12bc72dbaae6857fb",
